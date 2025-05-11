@@ -2,39 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My 3D Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple 3D Cube</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Creative Developer | Designer | Explorer</p>
-  </header>
-
-  <section id="hero">
-    <!-- 3D canvas where the scene will be rendered -->
-    <canvas id="three-canvas"></canvas>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project One</h3>
-      <p>Description of your amazing project.</p>
-    </div>
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>Another creative work worth showing.</p>
-    </div>
-  </section>
-
-  <!-- ✅ Load Three.js from CDN -->
+  <!-- Canvas will be injected by Three.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
-  <!-- ✅ Your custom JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
