@@ -1,7 +1,7 @@
 // Create the scene
 const scene = new THREE.Scene();
 
-// Create a camera
+// Create the camera
 const camera = new THREE.PerspectiveCamera(
   75, 
   window.innerWidth / window.innerHeight,
@@ -23,7 +23,7 @@ scene.add(cube);
 // Position the camera
 camera.position.z = 2;
 
-// Animate
+// Animate the cube
 function animate() {
   requestAnimationFrame(animate);
 
@@ -32,4 +32,5 @@ function animate() {
 
   renderer.render(scene, camera);
 }
+
 animate();
